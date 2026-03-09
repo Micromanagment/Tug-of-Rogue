@@ -1,0 +1,3 @@
+[submodule "Core/vendor/ncurses"]
+	path = Core/vendor/ncurses
+	url = https://github.com/mirror/ncurses.git
