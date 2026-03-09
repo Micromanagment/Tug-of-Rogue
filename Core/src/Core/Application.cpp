@@ -1,5 +1,7 @@
 #include "Application.h"
 #include <ncurses.h>
+#include <iostream>
+#include "Event.h"
 
 namespace Game
 {
@@ -12,21 +14,18 @@ namespace Game
     }
     void Application::Run()
     {
+
         initscr();
         cbreak();
         noecho();
         keypad(stdscr, TRUE);
         refresh();
 
-        int c;
-        while ((c = getch()) != 'q')
+        while(true)
         {
-            clear();
-            printw("Pressed: %d ('%c')\n", c, c);
-            printw("q to quit.\n");
+            Inputs::get_input();
             refresh();
         }
-
         endwin();
     }
 }
