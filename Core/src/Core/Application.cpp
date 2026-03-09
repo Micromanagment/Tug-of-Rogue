@@ -13,19 +13,17 @@ namespace Game
     void Application::Run()
     {
         initscr();
-        cbreak();            // immediate key processing
-        noecho();            // do not echo typed chars
-        keypad(stdscr, TRUE);// enable arrow keys
-
-        printw("Application started. Press 'q' to quit.\n");
+        cbreak();
+        noecho();
+        keypad(stdscr, TRUE);
         refresh();
 
         int c;
-        while ((c = getch()) != 'q')  // press 'q' to exit
+        while ((c = getch()) != 'q')
         {
             clear();
-            printw("You pressed: %d ('%c')\n", c, c);
-            printw("Press 'q' to quit.\n");
+            printw("Pressed: %d ('%c')\n", c, c);
+            printw("q to quit.\n");
             refresh();
         }
 
