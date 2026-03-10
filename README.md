@@ -15,8 +15,10 @@ Currently a work in progress
 
 ## How to build the game (Linux)
 ### gmake option
+- open a terminal into the repository
 - run generate.sh
-
+- make
+- run with Run.sh
 ## How to build the game (Windows)
 ### Create a .bat file or run
 - run generate.bat
