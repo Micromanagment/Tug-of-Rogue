@@ -1,4 +1,4 @@
-# Rogue (C++ / ncurses)
+# Tug-of-Rogue (C++ / ncurses)
 A multiplayer Tug of War style game with time travel mechanics, built in C++ with ncurses for rendering and premake for build automation.
 Currently a work in progress
 
