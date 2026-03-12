@@ -5,7 +5,7 @@ Currently a work in progress
 # Current Progress
 - [x] Set up Premake build
 - [ ] Set up Premake build for Windows
-- [ ] Add Logging
+- [x] Add Logging
 - [ ] Add Event System
 - [ ] Add Layers
 - [ ] Add Controls
@@ -17,11 +17,10 @@ Currently a work in progress
 ### gmake option
 - open a terminal into the repository
 - run generate.sh
-- make
-- run with Run.sh
+
 ## How to build the game (Windows)
-### Create a .bat file or run
-- run generate.bat
+### No option as of yet.
+
 
 ##
 ## How to run tests on Linux
@@ -31,7 +30,7 @@ Currently a work in progress
  - make - This creates the actual executable
  
  ##
-## How to run tests on Windows
+## How to run tests on Windows eventually
 1. Clone repository, open cmd in downloaded repository
 2. Run this commands:
  - call vendor\bin\premake\premake5.exe vs2017
@@ -46,4 +45,6 @@ Currently a work in progress
     
     src  # Engine
     
+### Logs/
     
+    Contains logging information during runtime

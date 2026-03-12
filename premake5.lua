@@ -48,6 +48,7 @@ filter "system:linux"
 
     postbuildcommands
     {
+        "{MKDIR} ../bin/" .. outputdir .. "/App",
         "cp %{cfg.buildtarget.abspath} ../bin/" .. outputdir .. "/App"
     }
 
